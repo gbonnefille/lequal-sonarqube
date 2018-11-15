@@ -4,9 +4,9 @@
 # init.bash
 # 
 # IMPORTANT : 
-# This file is intended to run be run while running SonarQube on the docker image "docker-cat".
-# This file should be run as an ENTRYPOINT of docker's image. If you re-use the docker-cat image, call this file inside your entrypoint.
-# The Dockerfile docker-cat inherit Sonarqube 6.7.1 image. This script run Sonarqube's entrypoint.
+# This file is intended to run be run while running SonarQube on the docker image "lequal/sonarqube".
+# This file should be run as an ENTRYPOINT of docker's image. If you re-use the lequal/sonarqube image, call this file inside your entrypoint.
+# The Dockerfile lequal/sonarqube inherit Sonarqube 6.7.1 image. This script run Sonarqube's entrypoint.
 # 
 # Description :
 # This file configure Sonarqube, also, it's perform permissions modifications to allow CNES scanner to involve in the project (creating sonar-properties files, etc...).

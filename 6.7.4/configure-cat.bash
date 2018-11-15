@@ -11,7 +11,7 @@ SONARQUBE_URL="http://localhost:9000"
 log_error(){
   status=$1
   errors=$2
-  msg="[ERROR] docker-cat, ${status} due to : ${errors}."
+  msg="[ERROR] sonarqube, ${status} due to : ${errors}."
   echo ${msg}
   exit 1
 }
@@ -24,7 +24,7 @@ log_error(){
 log_warning(){
   status=$1
   errors=$2
-  msg="[WARNING] docker-cat, ${status} due to : ${errors}."
+  msg="[WARNING] sonarqube, ${status} due to : ${errors}."
   echo ${msg}
 }
 
@@ -34,7 +34,7 @@ log_warning(){
 #  - 1 : status
 log_info(){
  status=$1 
- msg="[INFO] docker-cat, $status."
+ msg="[INFO] sonarqube, $status."
  echo ${msg}
 }
 

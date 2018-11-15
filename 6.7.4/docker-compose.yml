@@ -12,8 +12,8 @@ services:
     volumes:
       - postgresql:/var/lib/postgresql
       - postgresql_data:/var/lib/postgresql/data
-  docker-cat:
-    image : lequal/docker-cat:latest
+  sonarqube:
+    image : lequal/sonarqube:latest
     #build: .
     networks:
       - sonarnet
