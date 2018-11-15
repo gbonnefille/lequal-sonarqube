@@ -19,11 +19,8 @@ services:
       - sonarnet
     environment:
       - SONARQUBE_JDBC_URL=jdbc:postgresql://db:5432/sonar
-      - ALLOWED_GROUPS=1000;1001;1002
     ports:
       - "9000:9000"
-    volumes:
-      - /home/user:/media/sf_Shared
 
 networks :
   sonarnet:
